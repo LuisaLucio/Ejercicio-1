@@ -30,17 +30,17 @@ public class SumaDeElementos {
         int x= sc.nextInt();
 
         //Buscar y mostrarel indice
-        boolean encontrado= false;
+        boolean bandera= false;
         
         for(int i=0; i < arrayNumeros.length; i++){ 
             if (arrayNumeros[i]== x){
-                System.out.println("EL NUMERO QUE FUE ENCONTRADO EN EL INDICE: "+ i);
-                encontrado=true;
+                System.out.println("EL NUMERO"+ x +"QUE FUE ENCONTRADO EN EL INDICE: "+ i);
+                bandera=true;
                 break;
             }
         }
-        if(!encontrado){
-            System.out.println("EL NUMERO NO FUE ENCONTRADO EN EL ARRAY");
+        if(!bandera){
+            System.out.println("EL NUMERO"+ x +"NO FUE ENCONTRADO EN EL ARRAY");
         }
     }    
 }
